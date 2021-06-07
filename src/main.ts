@@ -8,28 +8,19 @@ export function decodeWord(encryptedWord: number): string {
   return decryptedWord;
 }
 
+const dictionary = {
+  '1': 'b',
+  '2': 'l',
+  '3': 'i',
+  '4': 'e',
+  '5': 'm',
+  '6': 'a',
+  '7': 'd',
+  '8': 'n',
+  '9': 'c',
+  '0': 'o'
+};
+
 const decodeLetter = (letter: string): string => {
-  switch (letter) {
-    case '1':
-      return 'b';
-    case '2':
-      return 'l';
-    case '3':
-      return 'i';
-    case '4':
-      return 'e';
-    case '5':
-      return 'm';
-    case '6':
-      return 'a';
-    case '7':
-      return 'd';
-    case '8':
-      return 'n';
-    case '9':
-      return 'c';
-    default:
-      return 'o';
-  }
-  return '';
+  return dictionary[letter];
 };
