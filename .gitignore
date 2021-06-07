@@ -17,3 +17,5 @@ build/
 
 # Optional eslint cache
 .eslintcache
+
+.idea/
