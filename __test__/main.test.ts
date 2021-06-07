@@ -12,4 +12,8 @@ describe('decodeWord should', () => {
   it('decode ble word when receives 124', () => {
     expect(decodeWord(124)).toBe('ble');
   });
+
+  it('decode lead word when receives 2467', () => {
+    expect(decodeWord(2467)).toBe('lead');
+  });
 });
