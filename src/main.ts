@@ -1,11 +1,10 @@
-export function decodeWord(encryptedWord: number): string {
-  const encryptedWordString = encryptedWord.toString();
+export function decodeWord(encodedWord: number): string {
+  const encodedLetters = encodedWord.toString().split('');
+  let decodedWord = '';
 
-  let decryptedWord = '';
-  for (let i = 0; i < encryptedWordString.length; i++) {
-    decryptedWord += decodeLetter(encryptedWordString[i]);
-  }
-  return decryptedWord;
+  encodedLetters.forEach(element => decodedWord += decodeLetter(element));
+
+  return decodedWord;
 }
 
 const dictionary = {
