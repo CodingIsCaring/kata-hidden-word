@@ -1,0 +1,58 @@
+{
+  "name": "kata-hidden-word",
+  "version": "1.0.0",
+  "description": "CodingIsCaring Kata",
+  "keywords": [
+    "kata",
+    "codingIsCaring",
+    "hiddenWord"
+  ],
+  "main": "main.ts",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "contributors": [
+    "mariasoria",
+    "yodra"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "build": "babel src -x .ts -d build",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cowcoders/eslint-config": "1.2.9",
+    "@types/jest": "26.0.23",
+    "@types/node": "15.6.0",
+    "@typescript-eslint/eslint-plugin": "4.24.0",
+    "@typescript-eslint/parser": "4.24.0",
+    "@vercel/ncc": "0.28.5",
+    "eslint": "7.27.0",
+    "eslint-plugin-jest": "24.3.6",
+    "jest": "26.6.3",
+    "jest-circus": "26.6.3",
+    "js-yaml": "4.1.0",
+    "prettier": "2.3.0",
+    "shx": "0.3.3",
+    "ts-jest": "26.5.6",
+    "typescript": "4.2.4"
+  },
+  "jest": {
+    "clearMocks": true,
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.test.(j|t)s"
+    ],
+    "verbose": true
+  }
+}
